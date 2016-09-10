@@ -181,6 +181,14 @@ function qrCode(){
 		// 默认设置
 		var content=window.location.search;
 		console.log(content);
+		/*var reg=/\=(\w|\W)+/;
+		 var arr=reg.exec(content);
+		 content=arr.input;*/
+
+		//content='https://www.baidu.com';
+		//console.log(content);
+		content = content.replace("?", "");
+			console.log(content);
 		// 清除上一次的二维码
 		if(qrcode){
 			qrcode.clear();
@@ -192,7 +200,8 @@ function qrCode(){
 		});
 
 		qrcode.makeCode(content);
-	}
+		//console.log('2:'+content);
+	};
 
 
 
