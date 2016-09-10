@@ -155,6 +155,7 @@ function qrCode(){
     // 默认设置
     var content;
     content=window.location.href;
+    alert(content)
     var reg=/\=(\w|\W)+/;
     var arr=reg.exec(content);
     content=arr.input
@@ -172,6 +173,7 @@ function qrCode(){
         height : 150
     });
     qrcode.makeCode(content);
+    alert(content)
 }
 
 
