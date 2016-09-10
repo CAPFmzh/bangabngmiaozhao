@@ -149,7 +149,7 @@ $(function submit() {
 
 
 // 生成二维码
-function qrCode(){
+/*function qrCode(){
     // 二维码对象
     var qrcode;
     // 默认设置
@@ -174,8 +174,25 @@ function qrCode(){
     });
     qrcode.makeCode(content);
     alert(content)
-}
+}*/
+function qrCode(){
+		// 二维码对象
+		var qrcode;
+		// 默认设置
+		var content=window.location.search;
+		console.log(content);
+		// 清除上一次的二维码
+		if(qrcode){
+			qrcode.clear();
+		}
+		// 创建二维码
+		qrcode = new QRCode(document.getElementById("qrcode"), {
+			width : 150,//设置宽高
+			height : 150
+		});
 
+		qrcode.makeCode(content);
+	}
 
 
 
