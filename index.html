@@ -315,6 +315,15 @@
 <script type="text/javascript" src="js/index.js" charset="UTF-8"></script>
 <script src="./js/swiper.min.js" type="text/javascript" charset="UTF-8"></script>
 <script src="./js/vue.min.js" type="text/javascript" charset="UTF-8"></script>
+原文链接：http://caibaojian.com/browser-ios-or-android.html
+<script type="text/javascript">
+     var u = navigator.userAgent; 
+     var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+     //android终端 
+     var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); 
+     //ios终端 
+     alert('是否是Android：'+isAndroid); 
+     alert('是否是iOS：'+isiOS); </script>
 <script>
    var  btn = document.getElementById('btnr');
     btn.onclick=function(){
