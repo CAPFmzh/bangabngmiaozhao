@@ -162,7 +162,7 @@ function qrCode(){
     console.log(content);
     //content='https://www.baidu.com';
     //console.log(content);
-    content = content.replace(/(^\s*)|(\s*$)/g, "");
+   // content = content.replace(/(^\s*)|(\s*$)/g, "");
     // 清除上一次的二维码
     if(qrcode){
         qrcode.clear();
