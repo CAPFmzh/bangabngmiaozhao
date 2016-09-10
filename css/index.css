@@ -1,0 +1,730 @@
+/*设置全局样式*/
+html{
+	font-size: 100px;
+}
+body{
+	font-family: 'PingFangSC-Regular';
+	overflow-x: hidden;
+	/*overflow:hidden;*/
+}
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+
+/**招生奖励**/
+.Zero{
+	width: 100%;
+	height: 5rem;
+	background: url("../img/youjiang.png");
+	background-size: 100%;
+	margin-bottom: 0.1rem;
+	position: relative;
+}
+.Zero>div{
+	width: 5.4rem;
+	height: 4.28rem;
+	position: absolute;
+	left: 0;
+	top:0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+
+}
+.Zero>div>img{
+	width: 100%;
+	height: 100%;
+}
+.Zero>div>p{
+	width: 4.21rem;
+	height: auto;
+	position: absolute;
+	top: 1.54rem;
+	left: 0;
+	margin: 0 auto;
+	right: 0;
+	line-height: 0.4rem;
+	font-family: "PingFangSC-Light";
+	font-size: 0.2rem;
+	color: #999;
+}
+
+/****活动展示海报****/
+.firstW{
+	width: 6.9rem;
+	height: 3.11rem;
+	margin: 0 auto;
+}
+.firstW>img{
+	width: 100%;
+	height: 100%;
+}
+
+/*活动主题 活动详情信息*/
+.second{
+	width: 100%;
+	margin-bottom: 0.1rem;
+	/*background: cadetblue;*/
+}
+.second>.content{
+	width: 6.9rem;
+	/*height: 10.08rem;*/
+	margin: 0 auto;
+	/*background: firebrick;*/
+}
+.content>h1{
+	font-size: 0.36rem;
+	margin-top: 0.3rem;
+	margin-bottom: 0.12rem;
+	font-family: 'PingFang-SC-Medium';
+	line-height: 0.5rem;
+}
+.second>.content>p>span:nth-child(1){
+	font-size: 0.22rem;
+	font-family: 'PingFangSC-Regular';
+	color: #999;
+	 margin-right: 0.3rem;
+} 
+.second>.content>p>span:nth-child(2){
+	
+}
+.second>.content>p>span:nth-child(3){
+	float: right;
+	color: #999;
+	font-size: 0.22rem;
+}
+.second>.content>p>span:nth-child(4){
+	float: right;
+}
+.second>.content>p>span>img{
+	width: 0.23rem;
+	height: 0.18rem;
+}
+.second>.content>p>span>b{
+	font-weight:100 ;
+	font-size: 0.22rem 'PingFangSC-Regular';
+	color: #999;
+	margin-left: 0.1rem;
+}
+.second>.content>p .schoolLogo{
+	    width: 0.24rem;
+    height: 0.24rem;
+    background: url(../img/png1.png) no-repeat 0px 0px;
+    background-size: 100%;
+    display: inline-block;
+    margin-left: 0.1rem;
+    /*vertical-align: bottom;*/
+}
+.content>.line2{
+	height: 0.05rem;
+	background: #F7F7F7;
+	margin-top: 0.3rem;
+	margin-bottom:0.3rem ;
+}
+.content_2{
+	font-size: 0.28rem;
+	color: #999999;
+	line-height: 0.4rem;
+	margin-top: 0.3rem;
+}
+.content_2 img{
+	width: 100%;
+	/*height: 3.6rem;*/
+	margin: 0.2rem 0;
+}
+
+/**活动信息**/
+.content_1{
+	background: #f7f7f7;
+	margin-top: 0.31rem;
+	/*margin-bottom: 0.38rem;*/
+	padding-left: 0.3rem;
+
+}
+.content_1>div{
+	border-bottom:0.01rem solid #e5e5e5;
+	padding: 0.3rem;
+
+}
+.content_1>div>.png{
+	width: 0.3rem;
+	height: 0.3rem;
+	display: inline-block;
+	background: url("../img/p.png") no-repeat;
+	background-size: 220%;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+}
+.content_1>div>.text{
+	color: #999;
+	font-size: 0.24rem;
+
+}
+.content_1>.div1>.png{
+	background-position: 0 -21px;
+}
+.content_1>.div2>.text{
+	width: 5.53rem;
+	display: inline-flex;
+}
+.content_1>.div2>.png{
+	background-position: -22px 0;
+}
+.content_1>.div2>img{
+	width: 0.17rem;
+	height: 0.31rem;
+	display: inline-block;
+	float: right;
+}
+.content_1>.div3>.png{
+	background-position: 0 0;
+}
+.content_1>.div4>.png{
+	background-position: -20px -21px;
+}
+.content_1>.div5{
+	border: none;
+}
+.content_1>.div6{
+	height: 0.3rem;
+}
+
+/*机构信息*/
+.jigou{
+	width: 100%;
+	height: 1.26rem;
+	padding: 0.37rem 0.31rem 0.3rem 0.3rem;
+	/*background: darkcyan;*/
+	position: relative;
+}
+.jigou>img{
+	width: 1rem;
+	height: 1rem;
+	/* display: inline-block; */
+	float: left;
+
+}
+.jigou>.jgxx{
+	width: 5.04rem;
+	margin-left: 0.2rem;
+	display: inline-block;
+
+}
+.jigou>.jgxx>h1{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.5rem;
+	font-size: 0.28rem;
+}
+.jigou>.jgxx>.address{
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.4rem;
+	margin-top: 0.06rem;
+	color: #999;
+	font-size: 0.24rem;
+	/*text-overflow: -o-ellipsis-lastline;*/
+	text-overflow:ellipsis;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+.jigou>.jt{
+	width: 0.17rem;
+	height: 0.31rem;
+	position: absolute;
+	display: inline-block;
+	top: 0.8rem;
+	right: 0.94rem;
+
+}
+
+/*已报名 滚动部分*/
+.third{
+	width: 100%;
+	height: 1.37rem;
+	/*background: #F7F7F7;*/
+	position: relative;
+	margin-top: 0.3rem;
+	/*padding-left: 0.3rem;*/
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid #f7f7f7;
+	border-top: 1px solid #f7f7f7;
+
+}
+.third>.baoming{
+	width: 1.45rem;
+	height: 0.33rem;
+	margin-bottom: 0.2rem;
+	color: #333333;
+	font-size: 0.24rem;
+	margin-left: 0.3rem;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	padding-left: 0.1rem;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	float: left;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.vue>p{
+	width: 0.8rem;
+	height: 1.4rem;
+	margin-right: 0.6rem;
+	float: left
+}
+.vue img{
+	width: 0.8rem;
+	height: 0.8rem;
+	display: block;
+	border-radius:50% ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***口碑评价 及 课程信息***/
+.kouBeiPj_con {
+	padding-top: 0.2rem;
+}
+.kbTitleCon {
+	width: 94%;
+	padding-left: 0.3rem;
+	padding-right: 3%;
+}
+.kbTitleCon .kb_title {
+	display: inline-block;
+	height: 0.52rem;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 18px 18px;
+	font-size: 0.26rem;
+	color: #333;
+}
+.con_lmar_rpad {
+	width: 94%;
+	margin-left: 3%;
+	padding-right: 3%;
+}
+.user_detail {
+	overflow: hidden;
+}
+.user_detail .user_l {
+	float: left;
+	width: 0.7rem;
+	/* margin-left: 3%; */
+	height: 0.7rem;
+}
+.pingjia_de {
+	padding-left: 0.3rem;
+	padding-bottom: 0.1rem;
+	padding-top: 0.2rem;
+}
+.pingjia_de:nth-child(odd){
+	background: #f7f7f7;
+}
+.usef_tx_box {
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.usef_tx_box img {
+	width: 100%;
+}
+.user_detail .user_r {
+	float: right;
+	width: 5.96rem;
+	padding-right: 0.3rem;
+	border-bottom: 0.01rem solid #ECECEC;
+	padding-bottom: 0.1rem;
+}
+.user_detail .user_r .user_name {
+	height: 0.32rem;
+	overflow: hidden;
+	line-height: 0.32rem;
+	margin-bottom: 0.21rem;
+}
+.user_detail .user_r .user_name span {
+	float: left;
+	font-size: 0.269rem;
+	color: #333;
+}
+.user_detail .user_r .user_name i {
+	float: right;
+	font-size: 0.19rem;
+	color: #999;
+}
+.userBm {
+	font-size: 0.24rem;
+	line-height: 0.2rem;
+	color: #999;
+	margin-bottom: 0.2rem;
+}
+.kbpj_detail {
+	width: 81%;
+	margin-left: 0.9rem;
+	padding-right: 3%;
+}
+.kbpj_star {
+	padding-top: 0.24rem;
+}
+.kbpj_star p {
+	display: inline-block;
+	line-height: 0.2rem;
+}
+/*.kbpj_star .kbpj_p1{
+				float: left;
+			}*/
+.kbpj_star .kbpj_p1 span {
+	/*margin-right: 0.02rem;*/
+}
+.kbpj_star .kbpj_p2 {
+	/*float:right;*/
+	/*padding-left: 5px;*/
+}
+.kbpj_p2 span {
+	display: inline-block;
+	padding-left: 0.03rem;
+	padding-right: 0.3rem;
+	border-right: 1px solid #D9D9D9;
+	color: #333333;
+	font-size: 0.2rem;
+;
+}
+.kbpj_p2 span:last-child {
+	border-right: none;
+}
+.pjnr {
+	font-size: 0.272rem;
+	color: #333;
+	line-height: 0.44rem;
+	margin-top: 0.21rem;
+	margin-bottom: 0.21rem;
+}
+.lookAll {
+	color: #0096FF;
+	font-size: 0.28rem;
+	line-height: 0.46rem;
+	text-align: center;
+}
+.star_grey {
+	width: 0.19rem;
+	height: 0.19rem;
+	display: inline-block;
+	background-image: url(../img/star_gray.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	/*margin-left: 0.05rem;*/
+	/*margin-right: 0.05rem;*/
+}
+.star_yellow {
+	background-image: url(../img/download.png);
+}
+
+
+
+
+/****课程详情****/
+.course{
+	margin-top: 0.27rem;
+}
+.course_1{
+	width: 100%;
+	height: 1.68rem;
+	padding: 0.3rem 0rem 0.32rem 0.3rem;
+	border-top: 0.01rem solid #F7F7F7;
+
+}
+.course_1>.img{
+	width: 1.64rem;
+	height: 1.19rem;
+	float: left;
+	border-radius: 4px;
+}
+.course_1>.img>img{
+	width: 100%;
+	height: 100%;
+}
+.course_1>.text{
+	float: right;
+	width: 5.33rem;
+	padding-right:0.3rem ;
+}
+.course_1>.text>h4{
+	font-size: 0.3rem;
+	color: #333;
+	line-height: 0.38rem;
+	margin-bottom: 0.1rem;
+	font-family: 'PingFang-SC-Medium';
+}
+.course_1>.text .SPAN{
+	color: #333;
+	font-size: 0.24rem;
+	font-family: PingFangSC-Light
+}
+.course_1>.text>.jgdz{
+ overflow: hidden;
+	padding-right: 0.3rem;
+}
+.course_1>.text>.jgdz>span{
+	display: inline-block;
+	color: #999999;
+	font-size: 0.24rem;
+	line-height: 0.34rem;
+	margin-top: 0.1rem;
+}
+.course_1>.text>.jgdz>.s1{
+	float: left;
+}
+.course_1>.text>.jgdz>.s2{
+	float: right;
+}
+.course_1>.text>ul{
+	margin-top: 0.14rem;
+
+}
+.course_1>.text>ul>li{
+	float: left;
+	font-size: 0.2rem;
+	color: #333333;
+	margin-right: 0.3rem;
+}
+.course_1>.text>ul>li>span {
+}
+
+
+/****btn****/
+.ss{
+	width: 100%;
+	height: 0.7rem;
+}
+.btn{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0.9rem;
+	background: #333;
+	
+}
+.btn>div{
+	height: 100%;
+	margin: 0 auto;
+}
+.btn>div>button{
+	width: 3.2rem;
+	height: 100%;
+	border: none;
+	font-family: 'PingFangSC-Regular';
+    text-align: center;
+
+    
+    
+
+	
+}
+.btn>div>button>a{
+	color: #FFFFFF;
+	
+	
+}
+.btn .btnl{
+	background-color: #333333;
+	float: left;
+}
+.btn .btnr{
+    background-color: #333333;
+	float: right;
+	color: #ffffff;
+}
+.btn button span{
+	background: url("../img/weix.png") no-repeat;
+	background-size: 208%;
+}
+.btn .btnl span{
+	width: 0.42rem;
+	height: 0.42rem;
+	display: inline-block;
+	background-position: 0px -27px;
+	vertical-align: middle;
+
+}
+.btn .btnr span{
+	width: 0.42rem;
+	height: 0.42rem;
+	display: inline-block;
+	background-position: 0px 0px;
+	vertical-align: middle;
+	background-size: 319%;
+}
+.btn .btnz{
+	float: left;
+	width: 1.1rem;
+	height: 1.1rem;
+	background: #333;
+	position: absolute;
+	bottom: 0;
+	border-radius: 50%;
+}
+.btn .btnz img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***index2***/
+.title{
+	font-size: 0.24rem;
+	color: #999999;
+	margin: 0.2rem 0 0.2rem 0.3rem;
+}
+input{
+	border: none;
+	font:0.28rem "PingFangSC-Regular";
+	color: #d9d9d9;
+	margin-left:0.2rem;
+
+}
+form>div{
+	padding: 0.25rem 0 0.25rem 0.3rem;
+	height: 0.4rem;
+	background: #FFFFFF;
+
+}
+form>div>label{
+	width: 1.12rem;
+	height: 0.4rem;
+	color: #333;
+	font:0.28rem "PingFangSC-Regular";
+}
+.phone{
+	border-top:0.02rem solid #d9d9d9;
+}
+.submit{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0.8rem auto 0;
+	width: 6rem;
+	height: 0.9rem;
+	background-color: #0096ff;
+	font-size:0.28rem ;
+	font-family: "PingFangSC-Light";
+	color: #fff;
+	border: none;
+	text-align: center;
+	border-radius: 30px;
+	-webkit-box-shadow:  0px 4px 6px 0px   rgba(0,150,255, .3);
+	box-shadow:  0px 4px 6px 0px  rgba(0,150,255, .3);
+	/*-webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease;*/
+}
+.tishi{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0.9rem;
+
+	/*bottom: 5.38rem;*/
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 0.3rem;
+	text-align: center;
+	width: 5.5rem;
+	height: 5.58rem;
+	line-height: 2rem;
+	display: none;
+}
+.tishi>img{
+	width: 100%;
+	height: 100%;
+}
+.tishi>div:nth-child(2){
+	position: absolute;
+	bottom:0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	background: #d9d9d9;
+	border-bottom-left-radius: 0.21rem;
+	border-bottom-right-radius: 0.21rem;
+	font-size: 0.28rem;
+
+
+}
+.tishi>div:nth-child(1){
+	width: 3rem;
+	height: 3rem;
+	position: absolute;
+	left: 0;
+	top: 0.65rem;
+	right: 0;
+	margin: auto;
+}
+.tishi>div:nth-child(1)>img{
+	width: 100%;
+	height: 100%;
+}
