@@ -22,7 +22,7 @@
 			<!--报名成功-->
 			<!--<img src="img/alert.png" alt="" />-->
 			<div id="qrcode" class="ewm"></div>
-			<div>保存二维码</div>
+			<div>长按保存二维码</div>
 
 		</div>
 		<p class="bg"></p>
@@ -35,33 +35,7 @@
 <script type="text/javascript" src="js/index.js" charset="UTF-8"></script>
 <script src="js/qrcode.js"></script>
 <script>
-	baocun()
-	function baocun(){
-		var qrCode=document.getElementById('qrcode');
-		var img=qrCode.getElementsByTagName('canvas')[0];
-		console.log(img)
 
-
-	}
-
-
-	function bindButtonEvent(element, type, handler)
-	{
-		if(element.addEventListener) {
-			element.addEventListener(type, handler, false);
-		} else {
-			element.attachEvent('on'+type, handler);
-		}
-	}
-
-
-	function saveAsLocalImage () {
-		var myCanvas = document.getElementById("thecanvas");
-		// here is the most important part because if you dont replace you will get a DOM 18 exception.
-		// var image = myCanvas.toDataURL("image/png").replace("image/png", "image/octet-stream;Content-Disposition: attachment;filename=foobar.png");
-		var image = myCanvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-		window.location.href=image; // it will save locally
-	}
 
 
 

@@ -153,25 +153,21 @@ body{
 	width: 0.3rem;
 	height: 0.3rem;
 	display: inline-block;
-	background: url("../img/p.png") no-repeat;
-	background-size: 220%;
 	vertical-align: middle;
 	margin-right: 0.2rem;
+}
+.content_1>div>.png>img{
+	width: 100%;
+	height: 100%;
 }
 .content_1>div>.text{
 	color: #999;
 	font-size: 0.24rem;
 
 }
-.content_1>.div1>.png{
-	background-position: 0 -21px;
-}
 .content_1>.div2>.text{
 	width: 5.53rem;
 	display: inline-flex;
-}
-.content_1>.div2>.png{
-	background-position: -22px 0;
 }
 .content_1>.div2>img{
 	width: 0.17rem;
@@ -179,18 +175,14 @@ body{
 	display: inline-block;
 	float: right;
 }
-.content_1>.div3>.png{
-	background-position: 0 0;
-}
-.content_1>.div4>.png{
-	background-position: -20px -21px;
-}
 .content_1>.div5{
 	border: none;
 }
 .content_1>.div6{
 	height: 0.3rem;
 }
+
+
 
 /*机构信息*/
 .jigou{
@@ -261,7 +253,7 @@ body{
 
 }
 .third>.baoming{
-	width: 1.45rem;
+	/*width: 1.45rem;*/
 	height: 0.33rem;
 	margin-bottom: 0.2rem;
 	color: #333333;
@@ -324,6 +316,7 @@ body{
 /***口碑评价 及 课程信息***/
 .kouBeiPj_con {
 	padding-top: 0.2rem;
+	margin-top: 0.4rem;
 }
 .kbTitleCon {
 	width: 94%;
@@ -536,7 +529,7 @@ body{
 /****btn****/
 .ss{
 	width: 100%;
-	height: 0.7rem;
+	height: 0.9rem;
 }
 .btn{
 	position: fixed;
@@ -577,25 +570,26 @@ body{
 	float: right;
 	color: #ffffff;
 }
-.btn button span{
-	background: url("../img/weix.png") no-repeat;
-	background-size: 208%;
-}
 .btn .btnl span{
-	width: 0.42rem;
-	height: 0.42rem;
+	width: 0.45rem;
+	height: 0.45rem;
 	display: inline-block;
-	background-position: 0px -27px;
 	vertical-align: middle;
 
+}
+.btn .btnl span>img{
+	width: 100%;
+	height: 100%;
 }
 .btn .btnr span{
 	width: 0.42rem;
 	height: 0.42rem;
 	display: inline-block;
-	background-position: 0px 0px;
 	vertical-align: middle;
-	background-size: 319%;
+}
+.btn .btnr span>img{
+	width: 100%;
+	height: 100%;
 }
 .btn .btnz{
 	float: left;
