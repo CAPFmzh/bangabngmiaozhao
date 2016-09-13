@@ -126,8 +126,7 @@ $(function submit() {
 			})
         }
 
-        // 生成二维码
-        qrCode();
+
         //点击提交发送数据
         function TOjson(str){
         	return  "JSON" in window?JSON.parse(str):eval("("+str+")");
@@ -149,20 +148,20 @@ $(function submit() {
 
 
 // 生成二维码
-/*function qrCode(){
+function qrCode(){
     // 二维码对象
     var qrcode;
     // 默认设置
     var content;
     content=window.location.href;
-    alert(content)
+    console.log('1:'+content);
     var reg=/\=(\w|\W)+/;
     var arr=reg.exec(content);
-    content=arr.input
-    console.log(content);
+    content=arr.input;
+
     //content='https://www.baidu.com';
     //console.log(content);
-   // content = content.replace(/(^\s*)|(\s*$)/g, "");
+    content = content.replace(/(^\s*)|(\s*$)/g, "");
     // 清除上一次的二维码
     if(qrcode){
         qrcode.clear();
@@ -172,37 +171,39 @@ $(function submit() {
         width : 150,//设置宽高
         height : 150
     });
+
     qrcode.makeCode(content);
-    alert(content)
-}*/
-function qrCode(){
-		// 二维码对象
-		var qrcode;
-		// 默认设置
-		var content=window.location.search;
-		console.log(content);
-		/*var reg=/\=(\w|\W)+/;
-		 var arr=reg.exec(content);
-		 content=arr.input;*/
+    console.log('2:'+content);
+}
+//封装ajax
+function ajax(options) {
+    //->参数初始化
+    var _default = {
+        url: "",
+        type: "get",
+        async: true,
+        data: null,
+        success: null
+    };
+    for (var key in options) {
+        if (options.hasOwnProperty(key)) {
+            _default[key] = options[key];
+        }
+    }
+    //->完成Ajax请求
+    var xhr = new XMLHttpRequest;
+    xhr.open(_default.type, _default.url, _default.async);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && /^2\d{2}$/.test(xhr.status)) {
+            var data = "JSON" in window ? JSON.parse(xhr.responseText) : eval("(" + xhr.responseText + ")");
 
-		//content='https://www.baidu.com';
-		//console.log(content);
-		content = content.replace("?", "");
-			console.log(content);
-		// 清除上一次的二维码
-		if(qrcode){
-			qrcode.clear();
-		}
-		// 创建二维码
-		qrcode = new QRCode(document.getElementById("qrcode"), {
-			width : 150,//设置宽高
-			height : 150
-		});
-
-		qrcode.makeCode(content);
-		//console.log('2:'+content);
-	};
-
+            if (typeof _default.success === "function") {
+                _default.success.call(window, data);
+            }
+        }
+    };
+    xhr.send(_default.data);
+}
 
 
 

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-		<title></title>
+		<title>报名页面</title>
 		<link rel="stylesheet" href="css/reset.min.css" />
 		<link rel="stylesheet" href="css/index.css" />
 	</head>
@@ -20,26 +20,39 @@
 		</form>
 		<div class="tishi">
 			<!--报名成功-->
-			<!--<img src="img/alert.png" alt="" />-->
 			<div id="qrcode" class="ewm"></div>
-			<div>长按保存二维码</div>
-
+			<div>保存二维码</div>
+			<div>报名成功，扫描二维码可直接跳转活页详情页面</div>
 		</div>
 		<p class="bg"></p>
-
-		
-		
 	</body>
 </html>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js" charset="UTF-8"></script>
 <script type="text/javascript" src="js/index.js" charset="UTF-8"></script>
 <script src="js/qrcode.js"></script>
 <script>
-
-
-
-
-
-
-
+	var btn = document.getElementById('submit');
+	function qrCode(){
+		// 二维码对象
+		var qrcode;
+		// 默认设置
+		var content=window.location.search;
+		console.log(content);
+		//content='https://www.baidu.com';
+		//console.log(content);
+		content = content.replace("?", "");
+		console.log('1'+content)
+		// 清除上一次的二维码
+		if(qrcode){
+			qrcode.clear();
+		}
+		// 创建二维码
+		qrcode = new QRCode(document.getElementById("qrcode"), {
+			width : 200,//设置宽高
+			height : 200
+		});
+		qrcode.makeCode(content);
+		//console.log('2:'+content);
+	}
+	btn.addEventListener('click',qrCode,false);
 </script>

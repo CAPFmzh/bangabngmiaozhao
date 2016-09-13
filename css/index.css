@@ -4,6 +4,7 @@ html{
 }
 body{
 	font-family: 'PingFangSC-Regular';
+	overflow-x: hidden;
 	/*overflow:hidden;*/
 }
 .lf{
@@ -181,8 +182,6 @@ body{
 	height: 0.3rem;
 }
 
-
-
 /*机构信息*/
 .jigou{
 	width: 100%;
@@ -239,7 +238,7 @@ body{
 
 /*已报名 滚动部分*/
 .third{
-width: 100%;
+	width: 100%;
 	height: 1.8rem;
 	/* background: #F7F7F7; */
 	position: relative;
@@ -284,7 +283,6 @@ width: 100%;
 	-webkit-align-items: center;
 	align-items: center;
 }
-
 .vue>p{
 	width: 0.8rem;
 	height: 1.4rem;
@@ -298,25 +296,10 @@ width: 100%;
 	border-radius:50% ;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***口碑评价 及 课程信息***/
 .kouBeiPj_con {
 	padding-top: 0.2rem;
-	margin-top: 0.4rem;
+	/*margin-top: 0.4rem;*/
 }
 .kbTitleCon {
 	width: 94%;
@@ -454,9 +437,6 @@ width: 100%;
 	background-image: url(../img/download.png);
 }
 
-
-
-
 /****课程详情****/
 .course{
 	margin-top: 0.27rem;
@@ -525,8 +505,7 @@ width: 100%;
 .course_1>.text>ul>li>span {
 }
 
-
-/****btn****/
+/****分享页面btn****/
 .ss{
 	width: 100%;
 	height: 0.9rem;
@@ -605,6 +584,152 @@ width: 100%;
 	height: 100%;
 }
 
+/*阅览页面  和 修改页面最后的点击按钮样式*/
+.ss1{
+	width: 100%;
+	height: 0.9rem;
+}
+.btn1{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0.9rem;
+	background: #333;
+
+}
+.btn1>button{
+	width: 100%;
+	height: 100%;
+	background: #0096FF;
+	border: none;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.28rem;
+}
+
+/*首页活动预览进行或结束页面最后的点击按钮样式*/
+.ss2{
+	width: 100%;
+	height: 1.2rem;
+}
+.btn2{
+	position: fixed;
+	left:0;
+	bottom: 0;
+	width: 100%;
+	height: 1.1rem;
+	background: #fff;
+
+}
+.btn2>div{
+	width: 6.25rem;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0.15rem;
+
+}
+.btn2>div>button{
+	width: 3rem;
+	height: 0.8rem;
+	text-align: center;
+	border: none;
+	background-size: 100%;
+	font-size: 0.28rem;
+	font-family: 'PingFangSC-Regular';
+	border: none;
+	text-align: center;
+	border-radius: 30px;
+
+
+
+
+}
+.btn2>div>button>a{
+	color: #FFFFFF;
+
+
+}
+.btn2 .btnl{
+	box-shadow:  0px 4px 6px 0px  rgba(0,150,255, .3);
+	background-color: #0096ff;
+	float: left;
+
+}
+.btn2 .btnr{
+	box-shadow:  0px 4px 6px 0px   rgb(250,222,159);
+	background-color: #FDB100;
+	float: right;
+
+}
+
+/**/
+.details{
+	position: fixed;
+	width: 100%;
+	/*height: 100%;*/
+	background: #ffffff;
+	left: 0;
+	top: 0;
+	z-index: 99999;
+	display: none;
+}
+.touxiang{
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 3.98rem;
+
+}
+.touxiang>img{
+	width: 100%;
+	height: 100%;
+}
+.class{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 5.18rem;
+	margin: 0 auto;
+	width: 5rem;
+	text-align: center;
+	font-size: 0.28rem;
+}
+.details>.content{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 5.88rem;
+	width: 5.04rem;
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+	color: #999999;
+}
+.guanbi{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 0.75rem;
+	height: 0.5rem;
+	width: 0.5rem;
+	font-size: 0.5rem;
+	color: #999999;
+}
+
+
+
+
+
+
+
+#show{
+	display: none;
+}
 
 
 
@@ -616,15 +741,7 @@ width: 100%;
 
 
 
-
-
-
-
-
-
-
-
-/***index2***/
+/***报名页面***/
 .title{
 	font-size: 0.24rem;
 	color: #999999;
@@ -678,47 +795,72 @@ form>div>label{
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 0.9rem;
-
-	/*bottom: 5.38rem;*/
+	top: 3rem;
+	/* bottom: 5.38rem; */
 	margin: 0 auto;
 	background: #fff;
 	border-radius: 0.3rem;
 	text-align: center;
 	width: 5.5rem;
-	height: 5.58rem;
+	height: 6.8rem;
 	line-height: 2rem;
 	display: none;
+	z-index: 11;
 }
 .tishi>img{
 	width: 100%;
 	height: 100%;
 }
+.tishi>div:nth-child(3){
+	position: absolute;
+	bottom: 0.1rem;
+	width: 4rem;
+	left: 0;
+	right: 0;
+	height: 2rem;
+	margin: auto;
+	line-height: 0.4rem;
+	text-align: center;
+	color: #999;
+}
 .tishi>div:nth-child(2){
 	position: absolute;
-	bottom:0;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
 	height: 0.9rem;
 	line-height: 0.9rem;
-	background: #d9d9d9;
+	background: #0096ff;
 	border-bottom-left-radius: 0.21rem;
 	border-bottom-right-radius: 0.21rem;
 	font-size: 0.28rem;
+	color: #fff;
 
 
 }
 .tishi>div:nth-child(1){
-	width: 3rem;
-	height: 3rem;
+	width: 4rem;
+	height: 4rem;
 	position: absolute;
 	left: 0;
-	top: 0.65rem;
+	top: 0.6rem;
 	right: 0;
 	margin: auto;
 }
 .tishi>div:nth-child(1)>img{
 	width: 100%;
 	height: 100%;
+}
+
+.bg{
+	width: 100%;
+	background-color: #000;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+	z-index: 10;
+	display: none;
 }
