@@ -240,7 +240,7 @@
         location.href="报名页面.html?"+b
     };
     //点击机构信息->弹出机构层，展示机构详情信息
-        $('.jigou').on('click', function () {
+        $('.jigou').on('touch', function () {
             $('#details').css('display','block');
 
             $("body").bind("touchmove",function(event){
@@ -252,7 +252,7 @@
         }
         var h=document.documentElement.clientHeight;
         $('#details').css('height',h);
-        $('#guanbi').on('click',function(){
+        $('#guanbi').on('touch',function(){
             $('#details').hide();
             ss()
         })
