@@ -241,12 +241,19 @@
     };
     //点击机构信息->弹出机构层，展示机构详情信息
     $('#jigou').on('click', function () {
-            $('#details').css('display','block')
+            $('#details').css('display','block');
+         $("body").bind("touchmove",function(event){
+             event.preventDefault();
+             });
         });
+    function ss(){
+            $("body").unbind("touchmove");
+        }
         var h=document.documentElement.clientHeight;
         $('#details').css('height',h);
         $('#guanbi').on('click',function(){
             $('#details').hide()
+            ss()
         })
   
 </script>
