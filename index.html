@@ -240,22 +240,16 @@
         location.href="报名页面.html?"+b
     };
     //点击机构信息->弹出机构层，展示机构详情信息
-        $('.jigou').on('touch', function () {
-            $('#details').css('display','block');
-
-            $("body").bind("touchmove",function(event){
-             event.preventDefault();
-             });
+    $(function () {
+        $('.jigou').on('click', function () {
+            $('#details').css('display','block')
         });
-        function ss(){
-            $("body").unbind("touchmove");
-        }
         var h=document.documentElement.clientHeight;
         $('#details').css('height',h);
-        $('#guanbi').on('touch',function(){
-            $('#details').hide();
-            ss()
+        $('#guanbi').on('click',function(){
+            $('#details').hide()
         })
+    })
 </script>
 <script type="text/javascript" charset="UTF-8">
     (function () {
